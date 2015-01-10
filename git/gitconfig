@@ -1,16 +1,43 @@
-# set your user tokens as environment variables, such as ~/.secrets
-# See the README for examples.
+[core]
+  editor = vim
+  excludesfile = ~/.yadr/git/gitignore
+
 [color]
-  ui = true
+  ui = auto
+
 [color "branch"]
   current = yellow reverse
   local = yellow
   remote = green
+
 [color "diff"]
   meta = yellow bold
   frag = magenta bold
-  old = red
-  new = green
+  old = red bold
+  new = green bold
+
+[color "status"]
+  added = green
+  changed = yellow
+  untracked = cyan
+
+[credential]
+  helper = osxkeychain
+
+[merge]
+  # Include summaries of merged commits in newly created merge commit messages
+  log = true
+  tool = opendiff
+
+[diff]
+  tool = opendiff
+
+[push]
+  default = simple
+
+[include]
+  path = .gitconfig.user
+
 [alias]
   # add
   a = add                           # add
@@ -25,10 +52,12 @@
 
   # branch
   b = branch -v                     # branch (verbose)
+  go = checkout -B
 
   # commit
-  c = commit -m                     # commit with message
+  c = commit -a                     # commit all
   ca = commit -am                   # commit all with message
+  # ca = !git add -A && git commit -avm
   ci = commit                       # commit
   amend = commit --amend            # ammend your last commit
   ammend = commit --amend           # ammend your last commit
@@ -46,17 +75,27 @@
   last = diff HEAD^                 # diff last committed change
 
   # log
-  l = log --graph --date=short
+  # View the SHA, description, and history graph of the latest 20 commits
+  l = log --pretty=oneline -n 20 --graph
+  # Get my commits
+  lm = log --author=\"Rob Stinogle\"
+  # Get my commits on one line
+  lmo = log --oneline --author=\"Rob Stinogle\"
   changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
   short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
   simple = log --pretty=format:\" * %s\"
   shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
+  # Grab the commits in the las X days and pretty print the files
+  time = "!f() { git log --pretty=format: --name-only --since=\"$1 days ago\"; }; f"
 
   # pull
   pl = pull                         # pull
+  pa = pull --all
 
   # push
   ps = push                         # push
+  psa = push shared --all
+  gp = push origin master
 
   # rebase
   rc = rebase --continue            # continue rebase
@@ -70,6 +109,7 @@
   uncommit = reset --soft HEAD^     # go back before last commit, with files in uncommitted state
   filelog = log -u                  # show changes to a file
   mt = mergetool                    # fire up the merge tool
+  rh = reset --hard
 
   # stash
   ss = stash                        # stash changes
@@ -89,39 +129,17 @@
   svnr = svn rebase
   svnd = svn dcommit
   svnl = svn log --oneline --show-commit
-[format]
-  pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
-[mergetool]
-  prompt = false
-[mergetool "mvimdiff"]
-  cmd="mvim -c 'Gdiff' $MERGED"     # use fugitive.vim for 3-way merge
-  keepbackup=false
-[merge]
-  summary = true
-  verbosity = 1
-  tool = mvimdiff
-[apply]
-  whitespace = nowarn
-[branch]
-  autosetupmerge = true
-[push]
-  # 'git push' will push the current branch to its tracking branch
-  # the usual default is to push all branches
-  default = upstream
-[core]
-  autocrlf = false
-  editor = vim
-  excludesfile = ~/.yadr/git/gitignore
-[advice]
-  statusHints = false
-[diff]
-  # Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
-  # instead of a/b/c/d as prefixes for patches
-  mnemonicprefix = true
-	algorithm = patience
-[rerere]
-  # Remember my merges
-  # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
-  enabled = true
-[include]
-  path = .gitconfig.user
+
+# URL shorthands
+[url "git@github.com:"]
+  insteadOf = "gh:"
+  pushInsteadOf = "github:"
+  pushInsteadOf = "git://github.com/"
+[url "git://github.com/"]
+  insteadOf = "github:"
+[url "git@gist.github.com:"]
+  insteadOf = "gst:"
+  pushInsteadOf = "gist:"
+  pushInsteadOf = "git://gist.github.com/"
+[url "git://gist.github.com/"]
+  insteadOf = "gist:"

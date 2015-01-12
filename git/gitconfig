@@ -33,7 +33,9 @@
   tool = opendiff
 
 [push]
-  default = simple
+  # 'git push' will push the current branch to its tracking branch
+  # the usual default is to push all branches
+  default = upstream
 
 [include]
   path = .gitconfig.user

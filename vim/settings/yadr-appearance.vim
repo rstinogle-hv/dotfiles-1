@@ -27,5 +27,5 @@ else
   end
 endif
 
-colorscheme solarized
+colorscheme Tomorrow-Night-Bright
 set background=dark

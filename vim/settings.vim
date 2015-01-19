@@ -1,6 +1,16 @@
 let vimsettings = '~/.vim/settings'
 let uname = system("uname -s")
 
+" Remap jj and jk to ESC. Much easier on the hands
+:inoremap jk <Esc>
+:inoremap jj <Esc>
+
+" Remove trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
+
+" Local setting for work laptop. These live in ~/.yadr/vim/localSettings.vim
+" autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
+
 for fpath in split(globpath(vimsettings, '*.vim'), '\n')
 
   if (fpath == expand(vimsettings) . "/yadr-keymap-mac.vim") && uname[:4] ==? "linux"

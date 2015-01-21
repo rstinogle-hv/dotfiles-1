@@ -112,3 +112,6 @@ set smartcase       " ...unless we type a capital
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim
 so ~/.yadr/vim/localSettings.vim
+
+" show hidden files in tree
+let NERDTreeShowHidden=1

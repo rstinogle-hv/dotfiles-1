@@ -115,3 +115,6 @@ so ~/.yadr/vim/localSettings.vim
 
 " show hidden files in tree
 let NERDTreeShowHidden=1
+
+" copy between iterm windows with vim
+set clipboard=unnamed

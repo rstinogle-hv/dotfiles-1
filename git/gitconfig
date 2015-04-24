@@ -8,7 +8,6 @@
 [color "branch"]
   current = yellow reverse
   local = yellow
-  remote = green
 
 [color "diff"]
   meta = yellow bold
@@ -75,6 +74,7 @@
   d = diff                          # diff unstaged changes
   dc = diff --cached                # diff staged changes
   last = diff HEAD^                 # diff last committed change
+  df = diff-tree --no-commit-id --name-only -r #show list of files changed in revision
 
   # log
   # View the SHA, description, and history graph of the latest 20 commits

@@ -27,5 +27,16 @@ else
   end
 endif
 
+" Tomorrow night color scheme
 colorscheme Tomorrow-Night-Bright
 set background=dark
+
+" Highlight current line number
+:set cursorline
+
+" Highlight in current window only
+augroup CursorLine
+  au!
+  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  au WinLeave * setlocal nocursorline
+augroup END

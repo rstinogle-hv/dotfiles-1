@@ -48,6 +48,13 @@ sh -c "`curl -fsSL https://raw.githubusercontent.com/stinoga/dotfiles-1/master/i
 
 ## Wait, you're not done! Do this:
 
+#### Install npm packages I like:
+```bash
+npm install -g eslint
+npm install -g babel-eslint
+npm install -g eslint-plugin-react
+```
+
 #### Install iTerm Solarized Colors
 YADR will install Solarized colorschemes into your iTerm. Go to Profiles => Colors => Load Presets to pick Solarized Dark.
 

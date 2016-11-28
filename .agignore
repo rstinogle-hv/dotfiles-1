@@ -1,2 +1,4 @@
 # HireVue Ignores
 coverage
+static/js/tests
+static/js/*.js

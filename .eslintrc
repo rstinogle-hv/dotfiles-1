@@ -1,0 +1,31 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "ecmascript": 6,
+    "jsx": true
+  },
+  "plugins": [
+    "react",
+  "promise"
+    ],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "rules": {
+    "comma-dangle": "off",
+    "linebreak-style": [
+      2,
+    "unix"
+      ],
+    "semi": [
+      2,
+    "always"
+      ],
+  },
+  "promise/param-names": 2,
+  "promise/always-return": 2,
+  "promise/catch-or-return": 2,
+  "promise/no-native": 0,
+}

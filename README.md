@@ -8,7 +8,7 @@
     # Yet Another Dotfile Repo v1.1
     # Now with Prezto and Vundle!
 
-#### sh -c "`curl -fsSL https://raw.githubusercontent.com/stinoga/dotfiles-1/master/install.sh`"
+    sh -c "`curl -fsSL https://raw.githubusercontent.com/stinoga/dotfiles-1/master/install.sh`"
 
 **Always be sure to run `rake update` after pulling to ensure plugins are updated**
 

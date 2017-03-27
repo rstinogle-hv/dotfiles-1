@@ -44,7 +44,7 @@ function prompt_skwp_setup {
       "%F{166}" # orange
       "%F{135}" # purple
       "%F{161}" # hotpink
-      "%F{118}" # limegreen
+      "%F{184}" # limegreen
     )
   else
     __PROMPT_SKWP_COLORS=(

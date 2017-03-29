@@ -50,9 +50,10 @@ sh -c "`curl -fsSL https://raw.githubusercontent.com/stinoga/dotfiles-1/master/i
 
 #### Install npm packages I like:
 ```bash
-npm install -g eslint
-npm install -g babel-eslint
-npm install -g eslint-plugin-react
+sudo npm install -g eslint
+sudo npm install -g babel-eslint
+sudo npm install -g eslint-plugin-react
+sudo npm install -g eslint-plugin-promise
 ```
 
 #### Install iTerm Solarized Colors

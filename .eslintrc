@@ -2,7 +2,8 @@
   "parser": "babel-eslint",
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "es6": true
   },
   "settings": {
     "ecmascript": 6,
@@ -10,19 +11,19 @@
   },
   "plugins": [
     "react",
-  "promise"
-    ],
+    "promise"
+  ],
   "extends": ["eslint:recommended", "plugin:react/recommended"],
   "rules": {
     "comma-dangle": "off",
     "linebreak-style": [
       2,
-    "unix"
-      ],
+      "unix"
+    ],
     "semi": [
       2,
-    "always"
-      ],
+      "always"
+    ],
   },
   "promise/param-names": 2,
   "promise/always-return": 2,

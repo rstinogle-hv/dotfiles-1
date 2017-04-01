@@ -54,6 +54,7 @@ sudo npm install -g eslint
 sudo npm install -g babel-eslint
 sudo npm install -g eslint-plugin-react
 sudo npm install -g eslint-plugin-promise
+ln -s ~/.yadr/.eslintrc ./.eslintrc
 ```
 
 #### Install iTerm Solarized Colors

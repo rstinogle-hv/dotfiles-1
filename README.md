@@ -54,6 +54,7 @@ sudo npm install -g eslint
 sudo npm install -g babel-eslint
 sudo npm install -g eslint-plugin-react
 sudo npm install -g eslint-plugin-promise
+sudo npm install -g eslint-plugin-jsx-a11y
 ln -s ~/.yadr/.eslintrc ./.eslintrc
 ```
 

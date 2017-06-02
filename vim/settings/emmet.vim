@@ -1,5 +1,5 @@
 " Allow jsx in javascript
-let g:jsx_ext_required = 1
+let g:jsx_ext_required = 0
 
 " Use all modes of emmet
 let g:user_emmet_mode='a'

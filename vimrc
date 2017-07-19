@@ -122,7 +122,7 @@ so ~/.yadr/vim/localSettings.vim
 let NERDTreeShowHidden=1
 
 " Set default explore mode, and hide the stupid banner at the top
-let g:netrw_liststyle = 2
+let g:netrw_liststyle = 1
 let g:netrw_banner = 0
 
 " copy between iterm windows with vim

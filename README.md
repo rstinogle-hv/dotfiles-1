@@ -58,6 +58,17 @@ sudo npm install -g eslint-plugin-jsx-a11y
 ln -s ~/.yadr/.eslintrc ./.eslintrc
 ```
 
+#### Set prompt to bash:
+```bash
+chsh -s /bin/bash
+```
+
+#### Set prompt in `~/.bash_profile`:
+```bash
+# source dropbox profile for common settings
+source $HOME/Dropbox/dotFiles/.profile
+```
+
 #### Install iTerm Solarized Colors
 YADR will install Solarized colorschemes into your iTerm. Go to Profiles => Colors => Load Presets to pick Solarized Dark.
 

@@ -90,3 +90,7 @@ sitemap.xml
 wp-content/cache/
 wp-content/backups/
 sitemap.xml.gz
+
+
+# HV ignores
+~/hv/webclient/packages/legacy/build/

@@ -1,3 +1,11 @@
+[user]
+  name = Rob Stinogle
+  email = rstinogle@hirevue.com
+# set your user tokens as environment variables, such as ~/.secrets
+# # See the README for examples.
+[github]
+  user = stinoga
+  token = 0734ae7403323852ec892bf464447689
 [core]
   editor = vim
   excludesfile = ~/.yadr/git/gitignore

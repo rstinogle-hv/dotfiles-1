@@ -127,3 +127,6 @@ let g:netrw_banner = 0
 
 " copy between iterm windows with vim
 set clipboard=unnamed
+
+" Prettier settings for HV ONLY
+let g:prettier#exec_cmd_path = "~/hv/webclient/node_modules/.bin/prettier"

@@ -6,3 +6,4 @@ static/js/tests
 static/js/*.js
 webclient/app/products/source/styleguide/build
 ~/hv/webclient/packages/legacy/build
+webclient/app/packages/styleguide/build

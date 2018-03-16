@@ -2,4 +2,5 @@
 coverage
 static/js/tests
 static/js/*.js
-webclient/app/products/source/styleguide/build
+webclient/app/packages/styleguide/build
+node_modules

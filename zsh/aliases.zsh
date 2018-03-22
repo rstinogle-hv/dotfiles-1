@@ -61,6 +61,7 @@ fi
 
 # mimic vim functions
 alias :q='exit'
+alias v='f -e vim' # quick opening files with vim
 
 # vimrc editing
 alias ve='vim ~/.vimrc'

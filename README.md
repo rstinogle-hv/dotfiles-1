@@ -58,9 +58,12 @@ sudo npm install -g eslint-plugin-jsx-a11y
 ln -s ~/.yadr/.eslintrc ./.eslintrc
 ```
 
-#### Set prompt to bash:
+#### Gotchas:
+If eslint isn't working, you may need yarn added to your `$PATH`.
+
+In `~/.profile`...
 ```bash
-chsh -s /bin/bash
+PATH="$HOME/.yarn/bin:$PATH"
 ```
 
 #### Set prompt in `~/.bash_profile`:

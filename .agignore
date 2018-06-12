@@ -1,9 +1,22 @@
 # HireVue Ignores
 coverage
 node_modules
-static/js/third-party
-static/js/tests
-static/js/*.js
+static/js
+static/widgets
+lib/UglifyJS
 webclient/app/products/source/styleguide/build
 ~/hv/webclient/packages/legacy/build
 webclient/app/packages/styleguide/build
+webclient/less/less.js
+webclient/static/lib
+applications/hvplatform
+applications/hvnext
+applications/hvinsights
+applications/hvintegrations
+testing/docker
+testing/python
+testing/should-run-ui-tests
+testing/coveragerc
+docker
+bin
+*.py

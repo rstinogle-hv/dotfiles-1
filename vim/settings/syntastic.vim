@@ -14,6 +14,7 @@ let g:syntastic_check_on_wq = 0
 "setting for eslint
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_args = "--no-eslintrc --config ~/.eslintrc"
+" enable to debug syntastic
 " let g:syntastic_debug = 33
 
 " Set es6 filetype for js files

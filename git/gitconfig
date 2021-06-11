@@ -153,3 +153,5 @@
   pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
   insteadOf = "gist:"
+[url "git@git.hirevue.net:"]
+	insteadOf = https://git.hirevue.net/

@@ -1,3 +1,9 @@
+"""""""""
+" A.L.E "
+"""""""""
+let g:ale_sign_error = '✗'
+let g:ale_sign_warning = '⚡'
+
 " syntastic ignores
 let g:syntastic_ignore_files = ['\.py$']
 

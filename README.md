@@ -7,6 +7,10 @@
 
     # Yet Another Dotfile Repo v1.1
     # Now with Prezto and Vundle!
+    
+    # If you need ruby and rake first:
+    sudo apt-get install ruby
+    gem install rake
 
     sh -c "`curl -fsSL https://raw.githubusercontent.com/stinoga/dotfiles-1/master/install.sh`"
 
